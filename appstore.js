@@ -23,7 +23,7 @@ function getOSContent() {
     var getDIContainer = document.getElementById('downloadInstructionsContainer');
     var getButtonContainer = document.getElementById('downloadButtonContainer');
 
-    if(isMobile.iOS() == false) {
+    if(isMobile.iOS()) {
         button = '<a href="https://dl.dropboxusercontent.com/s/p1e8au32dp8ylcx/iOS_Team_Provisioning_Profile.mobileprovision"> Fichier de sécurité</a> ' +
                  '<a href="itms-services://?action=download-manifest&amp;url=https://dl.dropboxusercontent.com/s/psxwvnswjlnwrkf/Info.plist"> ' +
                  '<img src="img/apple.svg" width="16" height="16"/>' +
