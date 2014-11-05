@@ -11,7 +11,7 @@
                         <key>kind</key>
                         <string>software-package</string>
                         <key>url</key>
-                        <string>https://mathiasmuller4sh.github.io/app/C21Mobile.ipa?dl=0</string>
+                        <string>https://mathiasmuller4sh.github.io/app/C21Mobile.ipa</string>
                     </dict>
                      <dict>
                           <key>kind</key>
@@ -27,7 +27,7 @@
                           <key>needs-shine</key>
                           <true/>
                           <key>url</key>
-                          <string>https://mathiasmuller4sh.github.io/img/logo-96.png?dl=0</string>
+                          <string>https://mathiasmuller4sh.github.io/img/logo-96.png</string>
                      </dict>
                 </array>
                 <key>metadata</key>
