@@ -24,7 +24,7 @@ function getOSContent() {
     var getButtonContainer = document.getElementById('downloadButtonContainer');
 
     if(isMobile.iOS()) {
-        button = '<a href="https://mathiasmuller4sh.github.io/app/iOS_Team_Provisioning_Profile_.mobileprovision"> Fichier de sécurité</a> ' +
+        button = '<a href="https://mathiasmuller4sh.github.io/app/XC_Ad_Hoc_.mobileprovision"> Fichier de sécurité</a> ' +
                  '<a href="itms-services://?action=download-manifest&amp;url=https://mathiasmuller4sh.github.io/app/Info.plist"> ' +
                  '<img src="img/apple.svg" width="16" height="16"/>' +
                  'Installer l\'application' +

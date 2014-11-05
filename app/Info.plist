@@ -13,7 +13,15 @@
                         <key>url</key>
                         <string>https://mathiasmuller4sh.github.io/app/C21Mobile.ipa</string>
                     </dict>
-                     <dict>
+                   <dict>
+                       <key>kind</key>
+                       <string>display-image</string>
+                       <key>needs-shine</key>
+                       <true/>
+                       <key>url</key>
+                       <string>https://mathiasmuller4sh.github.io/img/logo-96.png</string>
+                       </dict>
+                   <dict>
                           <key>kind</key>
                           <string>full-size-image</string>
                           <key>needs-shine</key>
