@@ -31,7 +31,7 @@ function getOSContent() {
                  '</a> ';
         instructions = 'Pour l\'installation iOS veuillez d\'abord télécharger et installer le fichier de sécurité.'
     } else if(isMobile.Android()) {
-        button = '<a href="https://mathiasmuller4sh.github.io/app/C21mobile.apk"> ' +
+        button = '<a href="https://www.dropbox.com/s/13o85bwwywx6qss/C21mobile.apk?dl=0"> ' +
                  '<img src="img/android.svg" width="16" height="16"/>' +
                  'Installer l\'application' +
                  '</a> '
