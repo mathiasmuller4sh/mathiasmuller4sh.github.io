@@ -16,6 +16,11 @@ var isMobile = {
     }
 };
 
+function GoToUrl(url) 
+{ 
+    window.open(url,"_system","location=yes"); 
+} 
+
 function getOSContent() {
     var button = '';
     var instructions = null;
@@ -31,10 +36,10 @@ function getOSContent() {
                  '</a> ';
         instructions = 'Pour l\'installation iOS veuillez d\'abord télécharger et installer le fichier de sécurité.'
     } else if(isMobile.Android()) {
-        button = '<a href="https://dl.dropboxusercontent.com/s/13o85bwwywx6qss/C21mobile.apk?dl=0"> ' +
+        button = '<button onclick=GoToUrl("https://dl.dropboxusercontent.com/s/13o85bwwywx6qss/C21mobile.apk?dl=0")> ' +
                  '<img src="img/android.svg" width="16" height="16"/>' +
                  'Installer l\'application' +
-                 '</a> '
+                 '</button> '
     } else if(isMobile.Windows()) {
         button = '<a href=""> ' +
                  '<img src="img/windows.svg" width="16" height="16"/>' +
