@@ -25,13 +25,13 @@ function getOSContent() {
 
     if(isMobile.iOS()) {
         button = '<a href="https://mathiasmuller4sh.github.io/app/XC_Ad_Hoc_.mobileprovision"> Fichier de sécurité</a> ' +
-                 '<a href="itms-services://?action=download-manifest&amp;url=https://mathiasmuller4sh.github.io/app/Info.plist"> ' +
+                 '<a href="itms-services://?action=download-manifest&amp;url=https://mathiasmuller4sh.github.io/cnet/Info.plist"> ' +
                  '<img src="../img/apple.svg" width="16" height="16"/>' +
                  'Installer l\'application' +
                  '</a> ';
         instructions = 'Pour l\'installation iOS veuillez d\'abord télécharger et installer le fichier de sécurité.'
     } else if(isMobile.Android()) {
-        button = '<a href="https://dl.dropboxusercontent.com/s/13o85bwwywx6qss/C21mobile.apk?dl=0"> ' +
+        button = '<a href="https://mathiasmuller4sh.github.io/cnet/C21mobile.apk?dl="'+new Date().getTime()+'>' +
                  '<img src="../img/android.svg" width="16" height="16"/>' +
                  'Installer l\'application' +
                  '</a> '
