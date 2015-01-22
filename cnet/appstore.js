@@ -24,14 +24,14 @@ function getOSContent() {
     var getButtonContainer = document.getElementById('downloadButtonContainer');
 
     if(isMobile.iOS()) {
-        button = '<a href="https://mathiasmuller4sh.github.io/app/XC_Ad_Hoc_.mobileprovision"> Fichier de sécurité</a> ' +
-                 '<a href="itms-services://?action=download-manifest&amp;url=https://mathiasmuller4sh.github.io/cnet/Info.plist"> ' +
+        button = '<a href="../app/XC_Ad_Hoc_.mobileprovision"> Fichier de sécurité</a> ' +
+                 '<a href="itms-services://?action=download-manifest&amp;url=https://centurynetrecette.naxos.fr/CnetMobile/cnet/Info.plist"> ' +
                  '<img src="../img/apple.svg" width="16" height="16"/>' +
                  'Installer l\'application' +
                  '</a> ';
         instructions = 'Pour l\'installation iOS veuillez d\'abord télécharger et installer le fichier de sécurité.'
     } else if(isMobile.Android()) {
-        button = '<a href="https://mathiasmuller4sh.github.io/cnet/C21mobile.apk?dl="'+new Date().getTime()+'>' +
+        button = '<a href="C21mobile.apk">' +
                  '<img src="../img/android.svg" width="16" height="16"/>' +
                  'Installer l\'application' +
                  '</a> '
