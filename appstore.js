@@ -22,10 +22,9 @@ function getOSContent() {
     var getDI = document.getElementById('downloadInstructions');
     var getDIContainer = document.getElementById('downloadInstructionsContainer');
     var getButtonContainer = document.getElementById('downloadButtonContainer');
-
     if(isMobile.iOS()) {
         button = '<a href="./app/C21_mobile_in_house_app.mobileprovision"> Fichier de sécurité</a> ' +
-                 '<a href="itms-services://?action=download-manifest&amp;url=https://centurynetrecette.naxos.fr/CnetMobile/app/Info.plist"> ' +
+                 '<a href="itms-services://?action=download-manifest&amp;url=https://centurynet.naxos.fr/CenturyNet/AppliMobileDuConseiller/app/Info.plist"> ' +
                  '<img src="./img/apple.svg" width="16" height="16"/>' +
                  'Installer l\'application' +
                  '</a> ';
