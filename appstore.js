@@ -31,15 +31,15 @@ function getOSContent() {
                  '</a> ';
         instructions = 'Pour l\'installation iOS veuillez d\'abord télécharger et installer le fichier de sécurité.'
     } else if(isMobile.Android()) {
-        button = '<a class="android" href="https://play.google.com/store/apps/details?id=fr.naxos.c21mobile">'+
-                 '<img alt="Télécharger depuis Google Play" '+
-                 ' src="https://developer.android.com/images/brand/fr_generic_rgb_wo_45.png" />'+
-                 '</a>'
+//        button = '<a class="android" href="https://play.google.com/store/apps/details?id=fr.naxos.c21mobile">'+
+//                 '<img alt="Télécharger depuis Google Play" '+
+//                 ' src="https://developer.android.com/images/brand/fr_generic_rgb_wo_45.png" />'+
+//                 '</a>'
 
-//        button = '<a href="./app/C21mobile.apk">' +
-//                 '<img src="./img/android.svg" width="16" height="16"/>' +
-//                 'Installer l\'application' +
-//                 '</a> '
+        button = '<a href="./app/C21mobile.apk">' +
+                 '<img src="./img/android.svg" width="16" height="16"/>' +
+                 'Installer l\'application' +
+                 '</a> '
     } else if(isMobile.Windows()) {
         button = '<a href="./app/C21mobile.xap"> ' +
                  '<img src="./img/windows.svg" width="16" height="16"/>' +
