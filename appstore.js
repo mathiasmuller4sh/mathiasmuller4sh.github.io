@@ -41,7 +41,7 @@ function getOSContent() {
                  'Installer l\'application' +
                  '</a> '
     } else if(isMobile.Windows()) {
-        button = '<a href="./app/naxos.cer">Fichier de sécurité</a> ' +
+        button = '<a href="./app/NAXOS.aetx">Fichier de sécurité</a> ' +
                  '<a href="./app/C21mobile.xap"> ' +
                  '<img src="./img/windows.svg" width="16" height="16"/>' +
                  'Installer l\'application' +
@@ -56,6 +56,6 @@ function getOSContent() {
 
     if(instructions != null) {
         getDIContainer.innerHTML = instructions;
-        getDI.className = getDI.className + " show";
+        //getDI.className = getDI.className + " show";
     }
 }
