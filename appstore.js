@@ -22,12 +22,19 @@ function getOSContent() {
     var getDI = document.getElementById('downloadInstructions');
     var getDIContainer = document.getElementById('downloadInstructionsContainer');
     var getButtonContainer = document.getElementById('downloadButtonContainer');
-    if(isMobile.iOS()) {
+    if(isMobile.Windows()) {
+        button = '<a href="./app/naxos.cer">Fichier de sécurité</a> ' +
+                 '<a href="./app/C21mobile.xap"> ' +
+                 '<img src="./img/windows.svg" width="16" height="16"/>' +
+                 'Installer l\'application' +
+                 '</a> '
+        instructions = 'Pour l\'installation sur un mobile windows phone, veuillez d\'abord télécharger et installer le fichier de sécurité. (une seule installation suffit.)'
+    } else if(isMobile.iOS()) {
         button = '<a href="itms-services://?action=download-manifest&amp;url=https://centurynet.naxos.fr/CenturyNet/AppliMobileDuConseiller/app/Info.plist"> ' +
                  '<img src="./img/apple.svg" width="16" height="16"/>' +
                  'Installer l\'application' +
                  '</a> ';
-        instructions = ''
+        instructions = 'Si vous souhaitez bénéficier de toutes les fonctionnalités de l\'application, merci d\'accepter le partage de votre position (géolocalisation)'
     } else if(isMobile.Android()) {
         button = '<a class="android" href="https://play.google.com/store/apps/details?id=fr.naxos.c21mobile">'+
                  '<img alt="Télécharger depuis Google Play" '+
@@ -38,11 +45,6 @@ function getOSContent() {
 //                 '<img src="./img/android.svg" width="16" height="16"/>' +
 //                 'Installer l\'application' +
 //                 '</a> '
-    } else if(isMobile.Windows()) {
-        button = '<a href="./app/C21mobile.xap"> ' +
-                 '<img src="./img/windows.svg" width="16" height="16"/>' +
-                 'Installer l\'application' +
-                 '</a> '
     } else {
         button = '<i>Veuillez-vous connecter avec votre mobile.</i>';
     }
