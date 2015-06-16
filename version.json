@@ -1,6 +1,6 @@
 {
-	"ios":">=1.1.10",
-	"android":">=1.1.10",
-	"wp":">=1.1.10",
+	"ios":">=1.1.11",
+	"android":">=1.1.11",
+	"wp":">=1.1.11",
 	"appStoreUrl":"https://centurynetrecette.naxos.fr/CnetMobile/index.html"
 }
