@@ -1,6 +1,6 @@
 {
-	"ios":">=1.1.9",
-	"android":">=1.1.9",
-	"wp":">=1.1.9",
+	"ios":">=1.1.12",
+	"android":">=1.1.12",
+	"wp":">=1.1.12",
 	"appStoreUrl":"https://centurynet.naxos.fr/CenturyNet/AppliMobileDuConseiller/index.html"
 }
