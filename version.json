@@ -1,4 +1,5 @@
 {
+	"extranetEnabled": true,
 	"ios":">=1.2.2",
 	"android":">=1.2.0",
 	"wp":">=1.1.12",
