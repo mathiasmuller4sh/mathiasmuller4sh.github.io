@@ -1,7 +1,7 @@
 {
 	"extranetEnabled": true,
-	"ios":">=1.2.8",
-	"android":">=1.2.8",
+	"ios":">=1.2.9",
+	"android":">=1.2.9",
 	"wp":">=1.1.12",
 	"appStoreUrl":"https://centurynetrecette.naxos.fr/CnetMobile/index.html"
 }
