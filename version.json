@@ -1,7 +1,8 @@
 {
 	"extranetEnabled": false,
-	"ios":">=1.2.5",
-	"android":">=1.2.5",
+	"ios":">=1.2.9",
+	"android":">=1.2.9",
 	"wp":">=1.1.12",
-	"appStoreUrl":"https://centurynet.naxos.fr/CenturyNet/AppliMobileDuConseiller/index.html"
+	"appStoreUrl":"https://centurynet.naxos.fr/CenturyNet/AppliMobileDuConseiller/index.html",
+	"intranetUrl":"http://intra.century21.fr/php4/score_specialistes.php"
 }
