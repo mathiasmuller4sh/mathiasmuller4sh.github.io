@@ -1,7 +1,7 @@
 {
 	"extranetEnabled": true,
-	"ios":">=1.2.20",
-	"android":">=1.2.20",
+	"ios":">=1.2.21",
+	"android":">=1.2.21",
 	"wp":">=1.1.12",
 	"appStoreUrl":"https://centurynetrecette.naxos.fr/CnetMobile/index.html",
 	"intranetUrl": "http://intracentury21.naxos-fr.net/php4/score_specialistes.php"
