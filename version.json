@@ -4,6 +4,6 @@
 	"wp":">=1.1.12",
 	"appStoreUrl":"https://centurynetrecette.naxos.fr/CnetMobile/index.html",
 	"intranetEnabled": true,
-	"intranetUrl": "http://intracentury21.naxos-fr.net/php4/score_specialistes.php",
+	"intranetUrl": "http://intracentury21.naxos-fr.net/php4/score_centurion.php",
 	"intranetStartFullScreen" : true
 }
