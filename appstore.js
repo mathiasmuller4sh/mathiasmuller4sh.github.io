@@ -22,24 +22,31 @@ function getOSContent() {
     var getDI = document.getElementById('downloadInstructions');
     var getDIContainer = document.getElementById('downloadInstructionsContainer');
     var getButtonContainer = document.getElementById('downloadButtonContainer');
-
-    if(isMobile.iOS()) {
-        button = '<a href="https://mathiasmuller4sh.github.io/app/XC_Ad_Hoc_.mobileprovision"> Fichier de sécurité</a> ' +
-                 '<a href="itms-services://?action=download-manifest&amp;url=https://mathiasmuller4sh.github.io/app/Info.plist"> ' +
-                 '<img src="img/apple.svg" width="16" height="16"/>' +
+    if(isMobile.Windows()) {
+        button = '<a href="./app/NAXOS.aetx">Fichier de sécurité</a> ' +
+                 '<a href="./app/C21mobile.xap"> ' +
+                 '<img src="./img/windows.svg" width="16" height="16"/>' +
+                 'Installer l\'application' +
+                 '</a> '
+        instructions = 'Pour l\'installation sur un mobile windows phone, veuillez d\'abord télécharger et installer le fichier de sécurité. (une seule installation suffit.)';
+    } else if(isMobile.iOS()) {
+        button = '<a href="itms-services://?action=download-manifest&amp;url=https://centurynet.naxos.fr/CenturyNet/AppliMobileDuConseiller/app/Info.plist"> ' +
+                 '<img src="./img/apple.svg" width="16" height="16"/>' +
                  'Installer l\'application' +
                  '</a> ';
-        instructions = 'Pour l\'installation iOS veuillez d\'abord télécharger et installer le fichier de sécurité.'
+        instructions = 'Si vous souhaitez bénéficier de toutes les fonctionnalités de l\'application, merci d\'accepter le partage de votre position (géolocalisation)';
+        //instructions = 'Pour l\'installation iOS veuillez accepter la notification de sécurité qui apparait lors du lancement de l\'application.';
+
     } else if(isMobile.Android()) {
-        button = '<a href="https://dl.dropboxusercontent.com/s/13o85bwwywx6qss/C21mobile.apk?dl=0"> ' +
-                 '<img src="img/android.svg" width="16" height="16"/>' +
-                 'Installer l\'application' +
-                 '</button> '
-    } else if(isMobile.Windows()) {
-        button = '<a href=""> ' +
-                 '<img src="img/windows.svg" width="16" height="16"/>' +
-                 'Installer l\'application (disponible bientôt)' +
-                 '</a> '
+        button = '<a class="android" href="https://play.google.com/store/apps/details?id=fr.naxos.c21mobile">'+
+                 '<img alt="Télécharger depuis Google Play" '+
+                 ' src="https://developer.android.com/images/brand/fr_generic_rgb_wo_45.png" />'+
+                 '</a>'
+
+//        button = '<a href="./app/C21mobile.apk">' +
+//                 '<img src="./img/android.svg" width="16" height="16"/>' +
+//                 'Installer l\'application' +
+//                 '</a> '
     } else {
         button = '<i>Veuillez-vous connecter avec votre mobile.</i>';
     }
@@ -48,6 +55,6 @@ function getOSContent() {
 
     if(instructions != null) {
         getDIContainer.innerHTML = instructions;
-        getDI.className = getDI.className + " show";
+        //getDI.className = getDI.className + " show";
     }
 }
