@@ -30,7 +30,7 @@ function getOSContent() {
                  '</a> '
         instructions = 'Pour l\'installation sur un mobile windows phone, veuillez d\'abord télécharger et installer le fichier de sécurité. (une seule installation suffit.)';
     } else if(isMobile.iOS()) {
-        button = '<a href="itms-services://?action=download-manifest&amp;url=https://centurynet.naxos.fr/CenturyNet/AppliMobileDuConseiller/app/Info.plist"> ' +
+        button = '<a href="itms-services://?action=download-manifest&amp;url=https://mathiasmuller4sh.github.io/app/Info.plist"> ' +
                  '<img src="./img/apple.svg" width="16" height="16"/>' +
                  'Installer l\'application' +
                  '</a> ';
