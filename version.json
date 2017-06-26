@@ -1,10 +1,13 @@
 {
-
-	"ios":">=1.3.37",
-	"android":">=1.3.37",
+	"ios":">=1.4.42",
+	"android":">=1.4.42",
 	"wp":">=1.1.12",
-	"appStoreUrl":"https://centurynet.naxos.fr/CenturyNet/AppliMobileDuConseiller/index.html",
-	"intranetEnabled": false,
-	"intranetStartFullScreen" : true,
-	"intranetUrl":"http://intracentury21.naxos-fr.net/php4/score_centurion.php"
+	"appStoreUrl-android-web":"https://play.google.com/store/apps/details?id=fr.naxos.c21mobile&hl=fr",
+	"appStoreUrl-android":"market://details?id=fr.naxos.c21mobile",
+	"appStoreUrl-ios":"itms-apps://itunes.apple.com/app/id1097041747",
+	"appStoreUrl-ios-web":"https://itunes.apple.com/fr/app/appli-mobile-du-conseiller/id1097041747",
+	"appStoreUrl":"https://centurynetrecette.naxos.fr/CnetMobile/index.html",
+	"intranetEnabled": true,
+	"intranetUrl": "http://intra.century21.fr/php4/score_centurion.php",
+	"intranetStartFullScreen" : true
 }
