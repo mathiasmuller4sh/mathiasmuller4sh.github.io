@@ -1,0 +1,58 @@
+<html>
+<script src="http://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+<script>
+  var settings = {
+    "async": true,
+    "crossDomain": false,
+    "url": "http://c-fluide-preprod.4sh.fr/api/intervention-process",
+    "url-dev": "http://127.0.0.1:8080/api/intervention-process",
+    "type": "POST",
+    "dataType": "JSON",
+    "headers": {
+      "Content-Type": "application/json",
+      "access-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJvYmVjaGV0b2lsbGVAdHdpbW0uZnIiLCJuYW1lIjoiSm9obiBEb2UiLCJhZG1pbiI6ZmFsc2UsImlzcyI6ImF1dGgwIn0.Nk8g8jsVTrlMvAyEy_0ETZStQSi2XZcOzQt_fvv9Y-8",
+      "Cache-Control": "no-cache",
+    },
+    xhrFields: {
+      withCredentials: false
+    },
+    "processData": false,
+    "data": JSON.stringify(
+      {
+        "callbackUrl": "https://twimm.fr",
+        "technician": {"email":"damien.riccio+tech@4sh.fr"},
+        "holder": {
+          "importInfos":{source:"TWWIM", id:"123"},
+          "@type": "company",
+          "company": "4SH",
+          "name": "4SH"
+        },
+        "site":{
+          "importInfos-":{source:"TWWIM", id:"12345"},
+          "name": "4SH BORDEAUX",
+          "address": "436 avenue de verdun",
+          "zipCode": "33700",
+          "city": "MERIGNAC",
+          "siretNumber": "19304738928374",
+        }
+      }
+    )
+  };
+
+  var call = function () {
+    $.ajax(settings)
+    .done(function (response) {
+      $('#result').val(JSON.stringify(response.intervention));
+    })
+    .fail(function (response) {
+      $('#result').val(JSON.stringify(response));
+    })
+  }
+</script>
+
+<div>
+  <button onclick="call()"> call</button>
+</div>
+<textarea id="result" style="width:100%; height:300px"></textarea>
+
+</html>
