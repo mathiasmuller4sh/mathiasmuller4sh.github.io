@@ -1,0 +1,13 @@
+{
+	"ios":">=1.4.42",
+	"android":">=1.4.42",
+	"wp":">=1.1.12",
+	"appStoreUrl-android-web":"https://play.google.com/store/apps/details?id=fr.naxos.c21mobile&hl=fr",
+	"appStoreUrl-android":"market://details?id=fr.naxos.c21mobile",
+	"appStoreUrl-ios-":"itms-apps://itunes.apple.com/app/id1097041747",
+	"appStoreUrl-ios":"https://itunes.apple.com/fr/app/appli-mobile-du-conseiller/id1097041747?mt=8",
+	"appStoreUrl":"https://centurynetrecette.naxos.fr/CnetMobile/index.html",
+	"intranetEnabled": true,
+	"intranetUrl": "http://intra.century21.fr/php4/score_centurion.php",
+	"intranetStartFullScreen" : true
+}
